@@ -1,31 +1,22 @@
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+    Plug 'sheerun/vim-polyglot'         " Better Syntax Support
 
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
+    Plug 'scrooloose/NERDTree'          " File Explorer
 
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    Plug 'jiangmiao/auto-pairs'         " Auto pairs for '(' '[' '{'
 
-    " Fuzzy finder 
-    " Plug 'nvim-telescope/telescope.nvim' 
+    Plug 'gruvbox-community/gruvbox'    " Theme
 
-    " Theme
-    Plug 'gruvbox-community/gruvbox' 
-
-    " git intigration
-    Plug 'tpope/vim-fugitive' 
+    Plug 'tpope/vim-fugitive'           " Git intigration
     
-    " fuzzy finder
-    Plug 'ctrlpvim/ctrlp.vim' 
+    Plug 'ctrlpvim/ctrlp.vim'           " Fuzzy finder
 
-    " Code complition
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code complition
 
-    " Syntex
-    Plug 'ap/vim-css-color'
+    Plug 'ap/vim-css-color'             " Color highlight
+
+    Plug 'mattn/emmet-vim'              " Color highlight
 
 call plug#end() 

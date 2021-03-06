@@ -1,4 +1,5 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -30,9 +31,37 @@ set nu
 
 set relativenumber
 
-" run local .vim if needed in a workspace/project
+set cursorline
+
+" Run local .vim if needed in a workspace/project
 set exrc
 
-let mapleader=" "
+" Status line ------------------------------
+set statusline=
+set statusline+=\ %M
+set statusline+=\ %y
+set statusline+=\ %r
+set statusline+=\ %F
+
+set statusline+=%= "Right side widgets 
+
+set statusline+=\ %c:%l/%L
+set statusline+=\ %p%%
+set statusline+=\ [%n]
+
+" Resize window ------------------------------
+nnoremap <Up> :resize +2<CR>
+nnoremap <Down> :resize -2<CR>
+nnoremap <Left> :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+
+" Quick switch to multiple window ------------------------------
+nnoremap <C-h> <C-W>h
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-l> <C-W>l
+
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=','
 
 map <silent> <C-n> :NERDTreeFocus<CR>
