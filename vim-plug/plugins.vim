@@ -25,4 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Code complition
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+    " Syntex
+    Plug 'ap/vim-css-color'
+
 call plug#end() 
